@@ -10,10 +10,11 @@
 # Printing
 * http://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram
 http://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
-* 
+*
 
 Make this templated.
 
+* http://btechsmartclass.com/DS/U5_T1.html
 * http://btechsmartclass.com/DS/U3_T3.html
 * http://cs-study.blogspot.com/2012/11/avl-tree.html
 
