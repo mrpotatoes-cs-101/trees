@@ -1,5 +1,7 @@
 package com.mrpotatoes.cs101.trees.binarytree;
 
+import com.mrpotatoes.cs101.trees.binarytree.node.Replacement;
+
 /**
  * Binary tree class.
  *
@@ -26,8 +28,8 @@ public class Binary implements BinaryContract {
 		// If there is no root this becomes root
 		if (root == null) {
 			root = newNode;
-
-		} else {
+		}
+    else {
 			// Set root as the Node we will start with as we traverse the tree.
 			Node focusNode = root;
 
@@ -50,9 +52,9 @@ public class Binary implements BinaryContract {
 						parent.leftChild = newNode;
 						return;
 					}
-
-				} else { // If we get here put the node on the right
-
+				}
+        // If we get here put the node on the right
+        else {
 					focusNode = focusNode.rightChild;
 
 					// If the right child has no children.
@@ -128,7 +130,8 @@ public class Binary implements BinaryContract {
 			if (key < focusNode.key) {
 				// Shift the focus Node to the left child
 				focusNode = focusNode.leftChild;
-			} else {
+			}
+      else {
 				// Shift the focus Node to the right child
 				focusNode = focusNode.rightChild;
 			}
@@ -232,7 +235,8 @@ public class Binary implements BinaryContract {
 		}
     // Two children so I need to find the deleted nodes replacement
 		else {
-			Node replacement = getReplacementNode(focusNode);
+      // Node replacement = getReplacementNode(focusNode); // Original.
+			Node replacement = Replacement.getReplacementNode(focusNode);
 
 			// If the focusNode is root replace root with the replacement
 			if (focusNode == root) {
@@ -258,7 +262,7 @@ public class Binary implements BinaryContract {
    * @param replacedNode
    * @return
    */
-	public Node getReplacementNode(Node replacedNode) {
+	/*public Node getReplacementNode(Node replacedNode) {
 		Node replacementParent = replacedNode;
 		Node replacement = replacedNode;
 		Node focusNode = replacedNode.rightChild;
@@ -281,6 +285,5 @@ public class Binary implements BinaryContract {
 		}
 
 		return replacement;
-	}
+	} */
 }
-

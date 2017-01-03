@@ -11,5 +11,5 @@ public interface BinaryContract {
   public void postOrderTraverseTree(Node focusNode);
   public Node findNode(int key);
   public boolean remove(int key);
-  public Node getReplacementNode(Node replacedNode);
+  // public Node getReplacementNode(Node replacedNode);
 }

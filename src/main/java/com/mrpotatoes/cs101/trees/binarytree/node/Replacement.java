@@ -1,7 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Find a replacement node.
  */
 package com.mrpotatoes.cs101.trees.binarytree.node;
 
@@ -14,13 +12,13 @@ import com.mrpotatoes.cs101.trees.binarytree.Node;
 public class Replacement {
   /**
    *
-   * @param replacedNode
+   * @param node
    * @return
    */
-	public static Node getReplacementNode(Node replacedNode) {
-		Node replacementParent = replacedNode;
-		Node replacement = replacedNode;
-		Node focusNode = replacedNode.rightChild;
+	public static Node getReplacementNode(Node node) {
+		Node replacementParent = node;
+		Node replacement = node;
+		Node focusNode = node.rightChild;
 
 		// While there are no more left children
 		while (focusNode != null) {
@@ -34,9 +32,9 @@ public class Replacement {
 		// leftChild slot and move the replaced nodes
 		// right child into the replacements rightChild
 
-		if (replacement != replacedNode.rightChild) {
+		if (replacement != node.rightChild) {
 			replacementParent.leftChild = replacement.rightChild;
-			replacement.rightChild = replacedNode.rightChild;
+			replacement.rightChild = node.rightChild;
 		}
 
 		return replacement;
