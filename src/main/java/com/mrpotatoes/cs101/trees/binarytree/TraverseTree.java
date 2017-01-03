@@ -7,7 +7,7 @@ package com.mrpotatoes.cs101.trees.binarytree;
 public class TraverseTree {
   /**
    *
-   * Secretly this is the preorder traverse. GASP!
+   * Secretly this is the pre-order traverse. GASP!
    * @param focusNode
    */
   public void traverse(Node focusNode) {
@@ -45,7 +45,7 @@ public class TraverseTree {
   }
 
   /**
-   * 
+   *
    * @param focusNode
    */
   public void postOrderTraverseTree(Node focusNode) {

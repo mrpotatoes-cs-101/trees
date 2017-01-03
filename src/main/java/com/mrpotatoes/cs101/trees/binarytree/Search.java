@@ -4,10 +4,10 @@ package com.mrpotatoes.cs101.trees.binarytree;
  *
  * @author alibresinn
  */
-public class Find {
+public class Search {
   Node root;
 
-  public Find(Node root) {
+  public Search(Node root) {
     this.root = root;
   }
 
@@ -42,6 +42,13 @@ public class Find {
         return null;
       }
     }
+
+    return focusNode;
+  }
+
+  // Find node by data.
+  public Node findNode(String data) {
+    Node focusNode = this.root;
 
     return focusNode;
   }

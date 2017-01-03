@@ -1,6 +1,6 @@
 package com.mrpotatoes.cs101.trees.binarytree.node;
 
-import com.mrpotatoes.cs101.trees.binarytree.Find;
+import com.mrpotatoes.cs101.trees.binarytree.Search;
 import com.mrpotatoes.cs101.trees.binarytree.Node;
 
 /**
@@ -23,7 +23,7 @@ public class Remove {
    * @return
    */
 	public boolean remove(int key) {
-    Find finder = new Find(root);
+    Search finder = new Search(root);
 		Node focusNode = finder.findNode(key);
 		Node parent = root;
 

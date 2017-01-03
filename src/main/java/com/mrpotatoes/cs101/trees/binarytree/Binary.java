@@ -16,6 +16,14 @@ import com.mrpotatoes.cs101.trees.binarytree.node.Replacement;
 public class Binary implements BinaryContract {
 	Node root;
 
+  public void insert(int key, String name) {
+    this.addNode(key, name);
+  }
+
+  public boolean delete(int key) {
+    return this.remove(key);
+  }
+
   /**
    * @param key
    * @param name
@@ -175,7 +183,8 @@ public class Binary implements BinaryContract {
 
 				// Shift the focus Node to the left child
 				focusNode = focusNode.leftChild;
-			} else {
+			}
+      else {
 				// Greater than focus node so go to the right
 				isItALeftChild = false;
 
@@ -183,14 +192,14 @@ public class Binary implements BinaryContract {
 				focusNode = focusNode.rightChild;
 			}
 
-			// The node wasn't found
+			// The node wasn't found.
 			if (focusNode == null) {
         return false;
       }
 		}
 
 		// If Node doesn't have children delete it
-		if (focusNode.leftChild == null && focusNode.rightChild == null) {
+		if (focusNode.hasChildren()) {
 			// If root delete it
 			if (focusNode == root) {
         root = null;
