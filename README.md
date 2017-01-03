@@ -52,6 +52,10 @@ are functionally the same but I believe it's easier to read. Classes <= 200
 (including comments) lines are the easiest to read and follow along. Preferably
 under 100 lines including comments.
 
+Most of this is broken out into groups of functionality (insertion, deletion, 
+update, search et al) and in turn it makes everything even easier to follow 
+along although it looks more complicated it isn't [much] more complicated.
+
 Also, with a lot of this functionality it doesn't make sense that it's part of
 the tree structure because even abstractly the tree class just calls the node
 class and the node class contains the actual tree structure. Everything else is
