@@ -16,6 +16,8 @@ public class Node {
   /**
    * return name + " has the key " + key + "\nLeft Child: " + leftChild +
    * "\nRight Child: " + rightChild + "\n";
+   * 
+   * @return
    */
   @Override
 	public String toString() {
