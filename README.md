@@ -16,6 +16,8 @@ teaching. Hopefully everything is really easy to follow along.
     variables, inheritance et al, creating/running unit tests.
 * Netbeans/Eclipse
   * This code should run directly if you download it.
+* Unit Tests
+  * Everything is written in unit tests (no `main` method) for tests.
 * (optional) Git
 
 ## How to use
