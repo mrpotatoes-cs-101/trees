@@ -1,13 +1,5 @@
 # CS 101: Trees Bro
-## Prerequisites
-* Know Java or some sort of programming language.
-  * I will not cover this and assume you know static vs non-static, member
-    variables, inheritance et al, creating/running unit tests.
-* Netbeans/Eclipse
-  * This code should run directly if you download it.
-* (optional) Git
-
-# Why
+## Why
 If I can teach it to you (self learning) then I can teach it to anyone. It's
 good to know and this isn't something that you need to spend 100K on in order to
 learn. Computer science shouldn't be hard and should be fun.
@@ -17,6 +9,14 @@ this day in and day out is actually pretty easy. Getting into the mindset is
 more difficult than actually doing the work. So, to learn, and so that I can
 remember, I have decided to put together a CS101 "course" all in github for self
 teaching. Hopefully everything is really easy to follow along.
+
+## Prerequisites
+* Know Java or some sort of programming language.
+  * I will not cover this and assume you know static vs non-static, member
+    variables, inheritance et al, creating/running unit tests.
+* Netbeans/Eclipse
+  * This code should run directly if you download it.
+* (optional) Git
 
 ## How to use
 * Start with the docs and they are in order.
@@ -66,4 +66,4 @@ choose to go elsewhere for more self teaching.
 Feel free to make pull requests.
 
 # Bibliography
-1. 
+1.
