@@ -11,13 +11,27 @@ package com.mrpotatoes.cs101.trees.binarytree;
  */
 public class Insertion {
   Node root;
+  
+  public void add(int key, String name) {
+    this.insert(key, name);
+  }
 
   /**
+   * Inserting a node into a tree.
+   * 
+   * There are 3 conditions.
+   * 1. If no tree then node is root.
+   * 2. Do comparison:
+   *   * If lesser go left.
+   *   * If greater go right.
+   * 3. If there is left or right child then go down the tree some more.
+   * 4. Use recursion.
+   * 
    * @param key
    * @param name
    * @todo Re-factor me so that it's simpler maybe.
    */
-	public void addNode(int key, String name) {
+	public void insert(int key, String name) {
     // Convenience variable so that the if/else checks aren't huge.
     String side;
 

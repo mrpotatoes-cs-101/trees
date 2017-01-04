@@ -32,25 +32,28 @@ public class BinaryTest extends TestCase {
    */
   public void testMain() {
     Binary theTree = new Binary();
+    
+    String Boss = "Boss";
 
-		theTree.addNode(50, "Boss");
+		theTree.addNode(50, Boss);
 		theTree.addNode(25, "Vice President");
 		theTree.addNode(15, "Office Manager");
 		theTree.addNode(30, "Secretary");
 		theTree.addNode(75, "Sales Manager");
 		theTree.addNode(85, "Salesman 1");
 
-    System.out.println("\nNode with the key 75");
-		System.out.println(theTree.findNode(75));
-		System.out.println("Remove Key 25");
-
-		theTree.remove(25);
-
-		System.out.println(theTree.findNode(25));
-
-		theTree.inOrderTraverseTree(theTree.root);
+//    System.out.println("\nNode with the key 75");
+//		System.out.println(theTree.findNode(50).getData());
+    assertTrue("Node is correct", theTree.findNode(50).getData().equals(Boss));
+//		System.out.println("Remove Key 25");
+//
+//		theTree.remove(25);
+//
+//		System.out.println(theTree.findNode(25));
+//
+//		theTree.inOrderTraverseTree(theTree.root);
     
     // TODO review the generated test code and remove the default call to fail.
-    fail("The test case is a prototype.");
+//    fail("The test case is a prototype.");
   }
 }

@@ -36,4 +36,9 @@ public class Deletion {
   public boolean delete(String byName) {
     return true;
   }
+  
+  // http://algorithms.tutorialhorizon.com/delete-the-binary-tree/
+  public void deleteTree(Node root) {
+    
+  }
 }
