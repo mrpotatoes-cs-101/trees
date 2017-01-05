@@ -72,10 +72,10 @@ choose to go elsewhere for more self teaching.
 Feel free to make pull requests.
 
 # Bibliography
-B, Rajinikanth B. "Introduction to Algorithm." __BTech Smart Class__. BTech Smart Class, 5 Jan. 2017.<br />
+B, Rajinikanth B. "Introduction to Algorithm." _BTech Smart Class_. BTech Smart Class, 5 Jan. 2017.<br />
 &nbsp;&nbsp;&nbsp;Web. 05 Jan. 2017. <http://btechsmartclass.com/DS/U1_T1.html>.<br />
 &nbsp;&nbsp;&nbsp;Learn the important data structures abstractly.
 
-Banas, Derek. "Java Algorithms" __Youtube.com__. Youtube.com. Jul 2, 2014.<br />
+Banas, Derek. "Java Algorithms" _Youtube.com_. Youtube.com. Jul 2, 2014.<br />
 &nbsp;&nbsp;&nbsp;Web. 05 Jan. 2017. <https://www.youtube.com/playlist?list=PLGLfVvz_LVvReUrWr94U-ZMgjYTQ538nT>.<br />
 &nbsp;&nbsp;&nbsp;Where most of my code originally hails.
