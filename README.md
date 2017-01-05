@@ -73,9 +73,9 @@ Feel free to make pull requests.
 
 # Bibliography
 B, Rajinikanth B. "DATA STRUCTURES." __Algorithms__. Btechsmartclass.com, 5 Jan. 2017.<br />
-&nbsp;&nbsp;&nbsp;Web. 05 Jan. 2017. <http://btechsmartclass.com/DS/U1_T1.html>.
+&nbsp;&nbsp;&nbsp;Web. 05 Jan. 2017. <http://btechsmartclass.com/DS/U1_T1.html>.<br />
 &nbsp;&nbsp;&nbsp;Learn the important data structures abstractly.
 
 Banas, Derek. "Java Algorithms" Youtube.com. Jul 2, 2014.<br />
-&nbsp;&nbsp;&nbsp;Web. 05 Jan. 2017. <https://www.youtube.com/playlist?list=PLGLfVvz_LVvReUrWr94U-ZMgjYTQ538nT>.
+&nbsp;&nbsp;&nbsp;Web. 05 Jan. 2017. <https://www.youtube.com/playlist?list=PLGLfVvz_LVvReUrWr94U-ZMgjYTQ538nT>.<br />
 &nbsp;&nbsp;&nbsp;Where most of my code originally hails.
