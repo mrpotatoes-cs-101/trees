@@ -11,6 +11,12 @@ package com.mrpotatoes.cs101.trees.binarytree;
  */
 public class Insertion {
   Node root;
+  Node focusNode;
+  
+  // Set the root node?
+  public Insertion(Node root) {
+    this.root = root;
+  }
   
   public void add(int key, String name) {
     this.insert(key, name);
@@ -32,6 +38,8 @@ public class Insertion {
    * @todo Re-factor me so that it's simpler maybe.
    */
 	public void insert(int key, String name) {
+    boolean nodeAdded = false;
+    
     // Convenience variable so that the if/else checks aren't huge.
     String side;
 
@@ -52,6 +60,8 @@ public class Insertion {
       return;
 		}
 
+    // Remember, this will go on forever and will destory your computer if you
+    // don't actually break out (or return if you're a nasty person).
     while (true) {
       // root is the top parent so we start there.
       parent = focusNode;
@@ -59,19 +69,32 @@ public class Insertion {
       // Check if the new node should go on the left side of the parent node.
       side = (key < focusNode.key) ? "left" : "right";
 
-      this.addChild(side, parent, focusNode, newNode);
+      nodeAdded = this.addChild(side, parent, focusNode, newNode);
+      
+      if (nodeAdded) {
+        // Don't return in a while loop; that's just gross.
+        break;
+      }
     }
 	}
 
-  protected void addChild(String side, Node parent, Node focusNode, Node newNode) {
+  protected boolean addChild(String side, Node parent, Node focusNode, Node newNode) {
+    boolean nodeAdded = false;
+    
     // Switch focus to the left child.
+    // Manage focusNode tho.
     focusNode = focusNode.getChild(side);
 
     // If the left child has no children.
     if (focusNode == null) {
       // then place the new node on the left of it.
       parent.setChild(side, newNode);
+      
+      // We added the node. Let's git outta here yo.
+      nodeAdded = true;
     }
+    
+    return nodeAdded;
   }
 
   protected void addLeft(Node parent, Node focusNode, Node newNode) {

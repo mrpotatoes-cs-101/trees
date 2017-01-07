@@ -14,7 +14,7 @@ import com.mrpotatoes.cs101.trees.binarytree.node.Replacement;
  * @see https://www.youtube.com/watch?v=M6lYob8STMI
  */
 public class Binary implements BinaryContract {
-	Node root;
+	public Node root;
 
   public void insert(int key, String name) {
     this.addNode(key, name);
