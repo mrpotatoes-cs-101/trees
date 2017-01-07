@@ -4,12 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.mrpotatoes.cs101.trees.Trees;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * @see http://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram
@@ -26,15 +23,10 @@ public class Render {
       Render.getJsonString(tree)
     );
     
-    // Yuck but whatever guys. Sometimes you just gotta do.
-    try {
-      Files.write(
-        Paths.get(workingDir + "/test.json"),
-        Trees.toPrettyFormat(json).getBytes()
-      );
-    } catch (IOException ex) {
-      Logger.getLogger(Trees.class.getName()).log(Level.SEVERE, null, ex);
-    }
+    Files.write(
+      Paths.get(workingDir + "/test.json"),
+      Render.prettyPrint(json).getBytes()
+    );
   }
   
   public static String getJsonString(Node tree) {

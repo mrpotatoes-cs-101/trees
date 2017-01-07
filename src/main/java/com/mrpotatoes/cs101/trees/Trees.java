@@ -1,9 +1,5 @@
 package com.mrpotatoes.cs101.trees;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.mrpotatoes.cs101.trees.binarytree.Binary;
 import com.mrpotatoes.cs101.trees.binarytree.Render;
 import java.io.IOException;
@@ -27,25 +23,5 @@ public class Trees {
     theTree.addNode(3, "3");
     
     Render.writeFile(theTree.root);
-  }
-  
-  /**
-   * Pretty print JSON Tree
-   * 
-   * @see https://coderwall.com/p/ab5qha/convert-json-string-to-pretty-print-java-gson
-   * 
-   * @param string jsonString
-   * 
-   * @return string
-   *   The formatted pretty printed JSON string.
-   */
-  public static String toPrettyFormat(String jsonString) {
-    JsonParser parser = new JsonParser();
-    Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-    JsonObject json = parser.parse(jsonString).getAsJsonObject();
-    String prettyJson = gson.toJson(json);
-
-    return prettyJson;
   }
 }
