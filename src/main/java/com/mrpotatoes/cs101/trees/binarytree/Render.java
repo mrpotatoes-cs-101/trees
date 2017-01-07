@@ -12,6 +12,7 @@ import java.nio.file.Paths;
  * Print the tree and write it to a file.
  * 
  * @author alibresinn
+ * @todo: Move this to the correct area.
  */
 public class Render {
   public static void writeFile(Node tree) throws IOException {
@@ -28,6 +29,11 @@ public class Render {
     );
   }
   
+  /**
+   * 
+   * @param tree
+   * @return 
+   */
   public static String getJsonString(Node tree) {
     Gson gson = new Gson();
     String json = gson.toJson(tree);
@@ -56,9 +62,15 @@ public class Render {
     return prettyJson;
   }
   
+  /**
+   * 
+   * @todo: Write a test for this.
+   * 
+   * @param tree
+   * @return 
+   */
   public static String prettyPrint(Node tree) {
-    Gson gson = new Gson();
-    String json = gson.toJson(tree);
+    String json = Render.getJsonString(tree);
     
     // Call the sister method instead.
     return Render.prettyPrint(json);
