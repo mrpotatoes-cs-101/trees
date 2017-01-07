@@ -9,22 +9,21 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 /**
- * @see http://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram
- * @see http://stackoverflow.com/questions/2241513/java-printing-a-binary-tree-using-level-order-in-a-specific-format
- * @see http://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
+ * Print the tree and write it to a file.
+ * 
  * @author alibresinn
  */
 public class Render {
   public static void writeFile(Node tree) throws IOException {
     String workingDir = System.getProperty("user.dir");
+    String testjson = workingDir + "/test.json";
+    System.out.println("Test file located: " + testjson);
     
     // Take dat tree, convert it to string then pretty print.
-    String json = Render.prettyPrint(
-      Render.getJsonString(tree)
-    );
+    String json = Render.prettyPrint(Render.getJsonString(tree));
     
     Files.write(
-      Paths.get(workingDir + "/test.json"),
+      Paths.get(testjson),
       Render.prettyPrint(json).getBytes()
     );
   }
