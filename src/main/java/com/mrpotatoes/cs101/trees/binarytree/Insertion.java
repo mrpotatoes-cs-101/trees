@@ -38,6 +38,7 @@ public class Insertion {
    * @todo Re-factor me so that it's simpler maybe.
    */
 	public void insert(int key, String name) {
+    // Added a thing.
     boolean nodeAdded = false;
     
     // Convenience variable so that the if/else checks aren't huge.
@@ -52,7 +53,7 @@ public class Insertion {
     // Set root as the Node we will start with as we traverse the tree. This
     // will be null if root is null but we'll return before anything happens
     // with focusNode.
-    Node focusNode = this.root;
+    this.focusNode = this.root;
 
 		// If there is no root this becomes root; leave.
 		if (this.root == null) {
@@ -64,12 +65,12 @@ public class Insertion {
     // don't actually break out (or return if you're a nasty person).
     while (true) {
       // root is the top parent so we start there.
-      parent = focusNode;
+      parent = this.focusNode;
 
       // Check if the new node should go on the left side of the parent node.
-      side = (key < focusNode.key) ? "left" : "right";
+      side = (key < this.focusNode.key) ? "left" : "right";
 
-      nodeAdded = this.addChild(side, parent, focusNode, newNode);
+      nodeAdded = this.addChild(side, parent, this.focusNode, newNode);
       
       if (nodeAdded) {
         // Don't return in a while loop; that's just gross.

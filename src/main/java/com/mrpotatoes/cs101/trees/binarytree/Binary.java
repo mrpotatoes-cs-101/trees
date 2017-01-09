@@ -82,44 +82,44 @@ public class Binary implements BinaryContract {
    * All nodes are visited in ascending order Recursion is used to go to one
    * node and then go to its child nodes and so forth.
    *
-   * @param focusNode
+   * @param startNode
    */
-	public void inOrderTraverseTree(Node focusNode) {
-		if (focusNode != null) {
+	public void inOrderTraverseTree(Node startNode) {
+		if (startNode != null) {
 			// Traverse the left node
-			preorderTraverseTree(focusNode.leftChild);
+			preorderTraverseTree(startNode.leftChild);
 
 			// Visit the currently focused on node
-			System.out.println(focusNode);
+			System.out.println(startNode);
 
 			// Traverse the right node
-			preorderTraverseTree(focusNode.rightChild);
+			preorderTraverseTree(startNode.rightChild);
 		}
 	}
 
   /**
    *
-   * @param focusNode
+   * @param startNode
    */
-	public void preorderTraverseTree(Node focusNode) {
-		if (focusNode != null) {
-			System.out.println(focusNode);
+	public void preorderTraverseTree(Node startNode) {
+		if (startNode != null) {
+			System.out.println(startNode);
 
-			preorderTraverseTree(focusNode.leftChild);
-			preorderTraverseTree(focusNode.rightChild);
+			preorderTraverseTree(startNode.leftChild);
+			preorderTraverseTree(startNode.rightChild);
 		}
 	}
 
   /**
    *
-   * @param focusNode
+   * @param startNode
    */
-	public void postOrderTraverseTree(Node focusNode) {
-		if (focusNode != null) {
-			preorderTraverseTree(focusNode.leftChild);
-			preorderTraverseTree(focusNode.rightChild);
+	public void postOrderTraverseTree(Node startNode) {
+		if (startNode != null) {
+			preorderTraverseTree(startNode.leftChild);
+			preorderTraverseTree(startNode.rightChild);
 
-			System.out.println(focusNode);
+			System.out.println(startNode);
 		}
 	}
 

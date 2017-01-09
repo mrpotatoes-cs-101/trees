@@ -37,6 +37,8 @@ public class Render {
   public static String getJsonString(Node tree) {
     Gson gson = new Gson();
     String json = gson.toJson(tree);
+    json = json.replaceAll("leftChild", "left")
+               .replaceAll("rightChild", "right");
     
     return json;
   }
@@ -46,10 +48,10 @@ public class Render {
    * 
    * @see https://coderwall.com/p/ab5qha/convert-json-string-to-pretty-print-java-gson
    * 
-   * @param String jsonString
+   * @param jsonString
    *   The json string.
    * 
-   * @return string
+   * @return
    *   The formatted pretty printed JSON string.
    */
   public static String prettyPrint(String jsonString) {

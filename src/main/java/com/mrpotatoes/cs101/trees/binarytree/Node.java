@@ -96,6 +96,6 @@ public class Node {
    */
   @Override
 	public String toString() {
-		return name + " has the key " + key;
+    return String.format("[%s]: %s", this.key, this.name);
 	}
 }
