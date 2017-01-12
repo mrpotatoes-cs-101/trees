@@ -1,7 +1,5 @@
 package com.mrpotatoes.cs101.trees.binarytree;
 
-import com.mrpotatoes.cs101.trees.binarytree.node.Replacement;
-
 /**
  * Binary tree class.
  *
@@ -245,22 +243,22 @@ public class Binary implements BinaryContract {
     // Two children so I need to find the deleted nodes replacement
 		else {
       // Node replacement = getReplacementNode(focusNode); // Original.
-			Node replacement = Replacement.getReplacementNode(focusNode);
-
-			// If the focusNode is root replace root with the replacement
-			if (focusNode == root) {
-        root = replacement;
-      }
-			else if (isItALeftChild) {
-        // If the deleted node was a left child make the replacement the left child
-        parent.leftChild = replacement;
-      }
-      else {
-        // Vice versa if it was a right child
-        parent.rightChild = replacement;
-      }
-
-			replacement.leftChild = focusNode.leftChild;
+//			Node replacement = Replacement.getReplacementNode(focusNode);
+//
+//			// If the focusNode is root replace root with the replacement
+//			if (focusNode == root) {
+//        root = replacement;
+//      }
+//			else if (isItALeftChild) {
+//        // If the deleted node was a left child make the replacement the left child
+//        parent.leftChild = replacement;
+//      }
+//      else {
+//        // Vice versa if it was a right child
+//        parent.rightChild = replacement;
+//      }
+//
+//			replacement.leftChild = focusNode.leftChild;
 		}
 
 		return true;

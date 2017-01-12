@@ -1,4 +1,4 @@
-package com.mrpotatoes.cs101.trees.binarytree;
+package com.mrpotatoes.cs101.trees;
 
 /**
  * @see http://stackoverflow.com/questions/4965335/how-to-print-binary-tree-diagram

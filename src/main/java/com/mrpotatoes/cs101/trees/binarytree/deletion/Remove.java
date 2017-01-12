@@ -1,4 +1,4 @@
-package com.mrpotatoes.cs101.trees.binarytree.node;
+package com.mrpotatoes.cs101.trees.binarytree.deletion;
 
 import com.mrpotatoes.cs101.trees.binarytree.Search;
 import com.mrpotatoes.cs101.trees.binarytree.Node;

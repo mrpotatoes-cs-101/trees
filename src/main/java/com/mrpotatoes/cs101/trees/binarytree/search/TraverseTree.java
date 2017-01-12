@@ -1,4 +1,4 @@
-package com.mrpotatoes.cs101.trees.binarytree.node;
+package com.mrpotatoes.cs101.trees.binarytree.search;
 
 /**
  *
